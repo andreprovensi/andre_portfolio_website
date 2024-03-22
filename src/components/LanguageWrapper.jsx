@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import Navbar from './Navbar'
+import HomeSection from './HomeSection'
 import "../static/css/LanguageWrapper.css"
 
 function LanguageWrapper() {
@@ -9,6 +10,7 @@ function LanguageWrapper() {
   return (
     <div className='general-container'>
       <Navbar setLang={setLanguage} lang={language}/>
+      <HomeSection lang={language} />
       {/* <AboutSection lang={language}/>
       <ProjectsSection lang={language} /> */}
     </div>
