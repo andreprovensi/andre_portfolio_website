@@ -4,8 +4,50 @@ section {
     height: 100vh;
     background-image: url('../../public/images/ai_background_7.jpg');
     background-size: cover;
+    padding-top: 60px;
 }
 
-div{
+.dislocated-div{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 100%;
+}
+
+
+.home-text{
     color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.personal-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#name{
+    font-family: sans-serif;
+    color: white;
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+#description{
+    font-family: sans-serif;
+    font-size: 6vw;
+    font-weight: bolder;
+    color: rgb(96, 165, 250);
+}
+
+.personal-image img{
+    width: 80%;
+    /* height: 50%; */
+    aspect-ratio: 1 / 1;
+    border-radius: 10%;
+    box-shadow: rgb(96, 165, 250) 0px 0px 40px 4px  ;
 }
