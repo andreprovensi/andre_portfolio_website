@@ -51,3 +51,47 @@ section {
     border-radius: 10%;
     box-shadow: rgb(96, 165, 250) 0px 0px 40px 4px  ;
 }
+
+
+@media (max-width: 700px) {
+    .dislocated-div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .home-text{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #name{
+        font-family: sans-serif;
+        color: white;
+        font-size: 7vw;
+        font-weight: bolder;
+    }
+    
+    #description{
+        font-family: sans-serif;
+        font-size: 9vw;
+        font-weight: bolder;
+        color: rgb(96, 165, 250);
+    }
+    
+    .personal-image{
+        /* border: 1px solid white; */
+        height: 50%;
+        justify-content: start;
+        
+    }
+    .personal-image img{
+        /* height: 50%; */
+        aspect-ratio: 1 / 1;
+        width: 40%;
+        border-radius: 10%;
+        box-shadow: rgb(96, 165, 250) 0px 0px 40px 4px  ;
+    }
+}

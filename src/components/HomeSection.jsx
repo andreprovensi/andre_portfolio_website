@@ -5,7 +5,6 @@ import profilePicture from '../public/images/andre_profile.png'
 
 function HomeSection({ lang }) {
   
-  
   const texts = {
     homeText:{
       en:"Hi, I'm André",
@@ -27,7 +26,7 @@ function HomeSection({ lang }) {
         </div>
 
         <div className='personal-image'>
-          <img src={profilePicture} alt="profile-image" />
+          <img src={profilePicture} alt="profile" />
         </div>
       </div>
       
