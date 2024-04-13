@@ -23,6 +23,7 @@ function HomeSection({ lang }) {
         <div className='home-text'>
           <p id='name'>{texts.homeText[lang]}</p>
           <p id='description'>{texts.aboutText[lang]}</p>
+          <button>DOWNLOAD CV</button>
         </div>
 
         <div className='personal-image'>
