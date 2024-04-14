@@ -116,6 +116,7 @@ function AboutSection({ lang }) {
                 <div className='skills-list-container'>
                     <ul className="skills-list">
                         {texts.educationList[lang].map((s,i)=><li key={i}>{s}</li>)}
+                        
                     </ul>
                 </div>
            
