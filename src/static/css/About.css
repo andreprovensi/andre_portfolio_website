@@ -10,6 +10,7 @@
 .dislocated-div-about{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap:8px;
     height: 100%;
 
 }
@@ -24,7 +25,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid white ; */
+    /* border: 3px solid white ; */
 }
 
 .icon-container{
@@ -67,6 +68,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px 20px;
     /* border: 1px solid white; */
     /* padding: 20px 0; */
     /* text-align: left; */
@@ -76,35 +78,31 @@
 .skills-list{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     height: 100%;
     font-size: 1.2rem;
 }
 
-
-
-
-/* ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-} */
+li{
+    margin: 10px 10px;
+}
 
 
 
 @media (max-width: 700px) {
+    
+    #about{
+        height: 200vh;
+    }
     .dislocated-div-about{
         display: flex;
         flex-direction: column;
+        padding-top: 40px;
         
     }
 
-    .text-container, li{
-        font-size: 0.5rem;
+    .text-container, .skills-list{
+        font-size: 0.85rem;
     }
-    .topic-icon{
-        width: 20px;
-        height: 20px;
-
-    }
+    
 }
