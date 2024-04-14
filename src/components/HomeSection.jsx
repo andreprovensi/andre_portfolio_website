@@ -17,7 +17,8 @@ function HomeSection({ lang }) {
   }
 
   return (
-    <section>
+    
+    <section id='home'>
 
       <div className='dislocated-div'>
         <div className='home-text'>
