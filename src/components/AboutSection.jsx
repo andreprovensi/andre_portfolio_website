@@ -85,40 +85,40 @@ function AboutSection({ lang }) {
 
     return (
     <section id='about'>
-        <div className="dislocated-div-about">
-          <div className="topic">
-            <div className='icon-container'>
-              <AiOutlineUser className='topic-icon' />{texts.aboutText[lang]}
-            </div>
-            <div className='text-container'>
-              {texts.aboutMeText[lang].split('.').map((s,i)=><div key={i}><p>{s+'.'}</p><br/></div>)}
-            </div>
+      <div className="dislocated-div-about">
+        <div className="topic">
+          <div className='icon-container'>
+            <AiOutlineUser className='topic-icon' />{texts.aboutText[lang]}
           </div>
-
-          <div className="topic" id="skills-topic">
-            <div className='icon-container' id='skills-icon-container'>
-              <DiCodeBadge  className='topic-icon' id='skills-icon'/> {texts.skillsText[lang]}
-            </div>
-
-            <div className='skills-list-container'>
-              <ul className="skills-list">
-                {texts.skillsList[lang].map((s,i)=><li key={i}>{s}</li>)}
-              </ul>
-            </div>
-          </div>
-
-          <div className="topic" id="education-topic">
-            <div className='icon-container' id='skills-icon-container'>
-              <BsMortarboard className='topic-icon' id='skills-icon'/> {texts.educationText[lang]}
-            </div>
-
-            <div className='skills-list-container'>
-              <ul className="skills-list">
-                {texts.educationList[lang].map((s,i)=><li key={i}>{s}</li>)}                        
-              </ul>
-            </div>           
+          <div className='text-container'>
+            {texts.aboutMeText[lang].split('.').map((s,i)=><div key={i}><p>{s+'.'}</p><br/></div>)}
           </div>
         </div>
+
+        <div className="topic" id="skills-topic">
+          <div className='icon-container' id='skills-icon-container'>
+            <DiCodeBadge  className='topic-icon' id='skills-icon'/> {texts.skillsText[lang]}
+          </div>
+
+          <div className='skills-list-container'>
+            <ul className="skills-list">
+              {texts.skillsList[lang].map((s,i)=><li key={i}>{s}</li>)}
+            </ul>
+          </div>
+        </div>
+
+        <div className="topic" id="education-topic">
+          <div className='icon-container' id='skills-icon-container'>
+            <BsMortarboard className='topic-icon' id='skills-icon'/> {texts.educationText[lang]}
+          </div>
+
+          <div className='skills-list-container'>
+            <ul className="skills-list">
+              {texts.educationList[lang].map((s,i)=><li key={i}>{s}</li>)}                        
+            </ul>
+          </div>           
+        </div>
+      </div>
     </section>
   )
 }

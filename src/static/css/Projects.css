@@ -1,12 +1,3 @@
-/* section {
-    background-color: #121212;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    padding-top: 60px;
-    overflow: visible;
-} */
-
 .dislocated-div-about{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -16,7 +7,6 @@
 .topic{
     font-family: 'nunito';
     font-size: 14px;
-    /* color: rgb(158, 152, 152); */
     color: white;
     height: 100%;
     width: 100%;
@@ -24,7 +14,6 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid white ; */
 }
 
 .icon-container{
@@ -36,7 +25,6 @@
     flex-direction: column;
     font-size: 1.2rem;
     color: rgb(96, 165, 250);
-    /* border: 1px solid white; */
     
 }
 
@@ -54,7 +42,6 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid white; */
     padding: 10px 20px;
     text-align: left;
 }
@@ -62,14 +49,10 @@
 .skills-list-container{
     height: 100%;
     width: 100%;
-    /* margin: 0 auto; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid white; */
-    /* padding: 20px 0; */
-    /* text-align: left; */
     
 }
 

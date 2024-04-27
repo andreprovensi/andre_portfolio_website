@@ -30,30 +30,30 @@ function ProjectsSection({lang}) {
 
 return (
 <section id='projects'>
-    <div className="dislocated-div-about">
+  <div className="dislocated-div-about">
 
-        <div className="topic">
-            <div className='icon-container'>
-                <AiOutlineUser className='topic-icon' /> ABOUT ME
-            </div>
-            <div className='text-container'>
-                {texts.aboutMeText[lang].split('.').map((s,i)=><div key={i}><p>{s+'.'}</p><br/></div>)}
-            </div>
-        </div>
-
-        <div className="topic" id="skills-topic">
-            <div className='icon-container' id='skills-icon-container'>
-                <DiCodeBadge  className='topic-icon' id='skills-icon'/> SKILLS
-            </div>
-
-            <div className='skills-list-container'>
-                <ul className="skills-list">
-                    {texts.skillsText[lang].map((s,i)=><li key={i}>{s}</li>)}
-                </ul>
-            </div>
-       
-        </div>
+    <div className="topic">
+      <div className='icon-container'>
+        <AiOutlineUser className='topic-icon' /> ABOUT ME
+      </div>
+      <div className='text-container'>
+        {texts.aboutMeText[lang].split('.').map((s,i)=><div key={i}><p>{s+'.'}</p><br/></div>)}
+      </div>
     </div>
+
+    <div className="topic" id="skills-topic">
+      <div className='icon-container' id='skills-icon-container'>
+        <DiCodeBadge  className='topic-icon' id='skills-icon'/> SKILLS
+      </div>
+
+      <div className='skills-list-container'>
+        <ul className="skills-list">
+          {texts.skillsText[lang].map((s,i)=><li key={i}>{s}</li>)}
+        </ul>
+      </div>
+    
+    </div>
+  </div>
 </section>
 )
 }
