@@ -1,4 +1,6 @@
-
+#home{
+    height: 100vh;
+}
 
 .dislocated-div{
     display: grid;

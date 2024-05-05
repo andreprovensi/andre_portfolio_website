@@ -1,60 +1,82 @@
 import React from 'react'
+import ProjectCard from './ProjectCard'
 import '../static/css/Projects.css'
-import { AiOutlineUser } from "react-icons/ai";
-import { DiCodeBadge } from "react-icons/di";
+
 
 function ProjectsSection({lang}) {
-  const texts = {
-    aboutMeText:{
-      en:`Experienced data scientist with a proven track record of leveraging Python, PySpark, Pandas, Numpy, Scikit-learn, SQL, AWS, and PowerBI to extract valuable insights and
-      drive data-driven decision-making.I have successfully applied data science, AI, and machine learning to tackle business challenges such as fraud detection, customer
-      segmentation, and understanding customer behavior and product relationships. I have collaborated closely with cross-functional teams in fraud, marketing, and product,
-      developing my skills in ETL processes and data integration.My work involved wrangling diverse datasets, ranging in size and complexity, to uncover actionable insights and
-      develop robust machine learning models. I also have good interdisciplinary communication skills, demonstrated through my ability
-      to explain technical concepts and present insights to diverse audiences with varying backgrounds`,
-      pt:"André Provensi"
+  
+  const projects = [
+    
+    {
+      title:{
+        en:"Predicting Diabetes With Machine Learning",
+        pt:"Previsão de Diabetes com Machine Learning"
+      },
+      github_url:"https://github.com/andreprovensi/diabetes_machine_learning_app",
+      web_url:"https://diabetes-prediction-mgje.onrender.com/",
+      img_url:""
     },
-
-    skillsText:{
-      en:[
-        'Python',
-        'SQL',
-        'AWS',
-        'Power BI',
-        'Machine Learning',
-        'Statistics'
-      ],
-      pt:'Cientista de Dados'
-    },
-  }
+    
+    {
+      title:{
+        en:"Other Project",
+        pt:"Outro Projeto"
+      },
+      github_url:"https://github.com/andreprovensi/diabetes_machine_learning_app",
+      web_url:"https://diabetes-prediction-mgje.onrender.com/",
+      img_url:""
+    }, 
+    
+    {
+      title:{
+        en:"Other Project",
+        pt:"Outro Projeto"
+      },
+      github_url:"https://github.com/andreprovensi/diabetes_machine_learning_app",
+      web_url:"https://diabetes-prediction-mgje.onrender.com/",
+      img_url:""
+    }, 
+    
+    {
+      title:{
+        en:"Other Project",
+        pt:"Outro Projeto"
+      },
+      github_url:"https://github.com/andreprovensi/diabetes_machine_learning_app",
+      web_url:"https://diabetes-prediction-mgje.onrender.com/",
+      img_url:""
+    }, 
+    {
+      title:{
+        en:"Other Project",
+        pt:"Outro Projeto"
+      },
+      github_url:"https://github.com/andreprovensi/diabetes_machine_learning_app",
+      web_url:"https://diabetes-prediction-mgje.onrender.com/",
+      img_url:""
+    }, 
+    {
+      title:{
+        en:"Other Project",
+        pt:"Outro Projeto"
+      },
+      github_url:"https://github.com/andreprovensi/diabetes_machine_learning_app",
+      web_url:"https://diabetes-prediction-mgje.onrender.com/",
+      img_url:""
+    }, 
+    
+  ]
 
 return (
-<section id='projects'>
-  <div className="dislocated-div-about">
-
-    <div className="topic">
-      <div className='icon-container'>
-        <AiOutlineUser className='topic-icon' /> ABOUT ME
-      </div>
-      <div className='text-container'>
-        {texts.aboutMeText[lang].split('.').map((s,i)=><div key={i}><p>{s+'.'}</p><br/></div>)}
+  <section id='projects'>
+    <div className="dislocated-div-projects">
+      <div className='cards-container'>
+        {
+          projects.map(p => <ProjectCard lang={lang} project={p}/>)
+        }
       </div>
     </div>
-
-    <div className="topic" id="skills-topic">
-      <div className='icon-container' id='skills-icon-container'>
-        <DiCodeBadge  className='topic-icon' id='skills-icon'/> SKILLS
-      </div>
-
-      <div className='skills-list-container'>
-        <ul className="skills-list">
-          {texts.skillsText[lang].map((s,i)=><li key={i}>{s}</li>)}
-        </ul>
-      </div>
-    
-    </div>
-  </div>
-</section>
+  </section>
 )
 }
 

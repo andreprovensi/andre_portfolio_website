@@ -1,89 +1,20 @@
-.dislocated-div-about{
+#projects{
+    min-height: 100vh;
+}
+
+.dislocated-div-projects{  
+    height: 100%;
+    width: 100%;
+}
+
+.cards-container{
+    height: 100%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100%;
-
-}
-.topic{
-    font-family: 'nunito';
-    font-size: 14px;
-    color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    padding: 20px;
+    border: 1px solid white;
+    grid-template-columns: 1fr 1fr 1fr ;
+    /* gap: 10px; */
+    /* border: 1px solid white; */
 }
 
-.icon-container{
-    height: 120px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1.2rem;
-    color: rgb(96, 165, 250);
-    
-}
-
-.topic-icon{
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-    
-}
-
-.text-container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px 20px;
-    text-align: left;
-}
-
-.skills-list-container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
-.skills-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    font-size: 1.2rem;
-}
-
-
-
-@media (max-width: 700px) {
-
-    .dislocated-div-about{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-top: 20px;
-    }
-    
-    .topic{
-        height: 300%;
-    }
-    .text-container, li{
-        font-size: 0.8rem;
-    }
-    .topic-icon{
-        width: 30px;
-        height: 30px;
-
-    }
-}

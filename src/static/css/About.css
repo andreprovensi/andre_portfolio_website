@@ -1,3 +1,9 @@
+#about{
+    /* max-height: 150vh; */
+    min-height: 100vh;
+    
+}
+
 .dislocated-div-about{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -66,6 +72,10 @@
 li{
     margin: 10px 10px;
 }
+
+/* #about-topic{
+    overflow: scroll;
+} */
 
 
 

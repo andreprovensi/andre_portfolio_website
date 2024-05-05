@@ -50,20 +50,12 @@ function AboutSection({ lang }) {
 
         educationList:{
           en:[
-            'Python',
-            'SQL',
-            'AWS',
-            'Power BI',
-            'Machine Learning',
-            'Statistics'
+            "Mechanical Engineering - Master's Degree - Federal University of Santa Catarina",
+            "Mechanical Engineering - Bachelor's Degree - Federal University of Santa Catarina",
           ],
           pt:[
-            'Python',
-            'SQL',
-            'AWS',
-            'Power BI',
-            'Machine Learning',
-            'Estatística'
+            'Engenharia Mecânica - Mestrado - Universidade Federal de Santa Catarina',
+            'Engenharia Mecânica - Bacharelado - Universidade Federal de Santa Catarina',
           ],
         },
 
@@ -86,7 +78,7 @@ function AboutSection({ lang }) {
     return (
     <section id='about'>
       <div className="dislocated-div-about">
-        <div className="topic">
+        <div className="topic" id="about-topic">
           <div className='icon-container'>
             <AiOutlineUser className='topic-icon' />{texts.aboutText[lang]}
           </div>

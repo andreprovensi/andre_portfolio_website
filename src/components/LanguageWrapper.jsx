@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navbar from './Navbar'
 import HomeSection from './HomeSection'
 import AboutSection from './AboutSection'
-// import ProjectsSection from './ProjectsSection'
+import ProjectsSection from './ProjectsSection'
 import "../static/css/LanguageWrapper.css"
 
 function LanguageWrapper() {
@@ -14,7 +14,7 @@ function LanguageWrapper() {
       <Navbar setLang={setLanguage} lang={language}/>
       <HomeSection lang={language} />
       <AboutSection lang={language}/>
-      {/* <ProjectsSection lang={language} /> */}
+      <ProjectsSection lang={language} />
     </div>
   )
 }
