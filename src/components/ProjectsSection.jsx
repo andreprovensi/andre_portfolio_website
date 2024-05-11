@@ -9,12 +9,12 @@ function ProjectsSection({lang}) {
     
     {
       title:{
-        en:"Predicting Diabetes With Machine Learning",
+        en:"Diabetes Prediction With Machine Learning",
         pt:"Previsão de Diabetes com Machine Learning"
       },
       github_url:"https://github.com/andreprovensi/diabetes_machine_learning_app",
       web_url:"https://diabetes-prediction-mgje.onrender.com/",
-      img_url:""
+      img_url:require("../public/images/diabetes_project.png")
     },
     
     {
@@ -67,17 +67,17 @@ function ProjectsSection({lang}) {
     
   ]
 
-return (
-  <section id='projects'>
-    <div className="dislocated-div-projects">
-      <div className='cards-container'>
-        {
-          projects.map(p => <ProjectCard lang={lang} project={p}/>)
-        }
+  return (
+    <section id='projects'>
+      <div className="dislocated-div-projects">
+        <div className='cards-container'>
+          {
+            projects.map((i,p) => <ProjectCard lang={lang} project={i} key={p}/>)
+          }
+        </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
 }
 
 export default ProjectsSection
