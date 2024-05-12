@@ -15,11 +15,19 @@
     height: 100%;
     width: 100%;
     display: grid;
-    /* padding: 20px; */
-    /* border: 1px solid white; */
     grid-template-columns: 1fr 1fr 1fr ;
     gap: 15px;
-    /* border: 1px solid white; */
 }
 
 
+@media (max-width: 750px) {
+
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+}

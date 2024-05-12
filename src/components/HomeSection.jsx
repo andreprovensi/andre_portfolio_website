@@ -7,11 +7,11 @@ function HomeSection({ lang }) {
   
   const texts = {
     homeText:{
-      en:"Hi, I'm André",
+      en:"André Provensi",
       pt:"André Provensi"
     },
     aboutText:{
-      en:"I'm a Data Scientist",
+      en:"Data Scientist",
       pt:'Cientista de Dados'
     },
   }

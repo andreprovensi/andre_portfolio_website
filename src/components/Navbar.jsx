@@ -24,8 +24,8 @@ function Navbar({setLang, lang}) {
       pt:'CONTATOS'
     },
     skillsText:{
-      en:'SKILLS',
-      pt:'SKILLS'
+      en:'CONTACT',
+      pt:'CONTATO'
     },
 
   }
@@ -34,8 +34,8 @@ function Navbar({setLang, lang}) {
       <div id='links'>
         <NavLink href='#home' title={texts.homeText[lang]}/>
         <NavLink href='#about' title={texts.aboutText[lang]}/>
-        <NavLink href='#skills' title={texts.skillsText[lang]}/>
         <NavLink href='#projects' title={texts.projectsText[lang]}/>
+        <NavLink href='#contact' title={texts.skillsText[lang]}/>
       </div>
 
       <div id='medias'>
