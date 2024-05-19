@@ -33,6 +33,11 @@
     border-radius: 0 0 10px 10px;
 }
 
+.project-title a{
+    color: rgb(96, 165, 250);
+    text-decoration: none;
+}
+
 .project-card-container a:hover{
     color: white;
 }
