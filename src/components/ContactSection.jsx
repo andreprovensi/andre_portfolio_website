@@ -40,6 +40,7 @@ function ContactSection({lang}) {
 
         </div>
       </div>
+      <div className='effect'></div>
     </section>
   )
 }

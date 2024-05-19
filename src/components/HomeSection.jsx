@@ -2,6 +2,7 @@ import React from 'react'
 import '../static/css/Home.css'
 import '../public/images/andre_profile.png'
 import profilePicture from '../public/images/andre_profile.png'
+import CVfile from '../public/files/CV_EN_ANDRE_PROVENSI_PE.pdf'
 
 function HomeSection({ lang }) {
   
@@ -24,7 +25,7 @@ function HomeSection({ lang }) {
         <div className='home-text'>
           <p id='name'>{texts.homeText[lang]}</p>
           <p id='description'>{texts.aboutText[lang]}</p>
-          <button>DOWNLOAD CV</button>
+          <a href={CVfile} download='CV_andre_provensi'><button>DOWNLOAD CV</button></a>
         </div>
 
         <div className='personal-image'>

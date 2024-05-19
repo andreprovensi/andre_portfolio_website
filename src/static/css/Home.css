@@ -18,6 +18,10 @@
     text-align: center;
 }
 
+.home-text a{
+    text-decoration: none;
+}
+
 .personal-image{
     display: flex;
     justify-content: center;
