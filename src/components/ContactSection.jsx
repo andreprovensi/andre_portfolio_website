@@ -25,7 +25,7 @@ function ContactSection({lang}) {
               <RxLinkedinLogo className='contact-icon' id='linkedin-icon'/> 
             </div>
             <div className="text-contact-container">
-              <a href="https://www.linkedin.com/in/andreprovensi/">Linkedin</a>
+              <a href="https://www.linkedin.com/in/andreprovensi/">LinkedIn</a>
             </div>
           </div>
 
