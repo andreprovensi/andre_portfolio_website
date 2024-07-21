@@ -1,6 +1,5 @@
 import React from 'react'
 import '../static/css/Home.css'
-import '../public/images/andre_profile.png'
 import profilePicture from '../public/images/andre_profile.png'
 import CVfile from '../public/files/CV_EN_ANDRE_PROVENSI_PE.pdf'
 
